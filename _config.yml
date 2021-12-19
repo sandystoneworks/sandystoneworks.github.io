@@ -1,44 +1,59 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: Bay Jekyll Theme
+title: Sandy Stoneworks
 description: >- # this means to ignore newlines until "baseurl:"
-  Bay is a minimal Jekyll Theme.
-baseurl: "/bay" # the subpath of the site
-url: "https://eliottvincent.github.io" # the base hostname & protocol for the site
-og_image: /assets/img/profile-pic.jpg
-google_analytics: "UA-121636368-3"
+  Stonemason and Timber Framer in Victoria, BC.
+baseurl: "/" # the subpath of the site
+url: "https://sandystoneworks.com" # the base hostname & protocol for the site
+google_analytics: "G-CB199LTTK5"
 
 header:
   pages:
     - name: Home
       slug: /
-    - name: Work
-    - name: Blog
+    - name: Stonework
+    - name: Timber Frames
+      slug: /timber_frames
 
 footer:
-  show_powered_by: true
   contact:
     - name: Email
-      value: yourmail@domain.com
-      link: mailto:yourmail@domain.com
-    - name: WeChat
-      value: YourWeChatUsername
-      link: "#"
-  follow:
-    - name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - name: Facebook
-      link: http://facebook.com/YourFacebookUsername
-    - name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
-    - name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - name: RSS
-      link: /feed.xml
+      value: sandystoneworks@gmail.com
+      link: mailto:sandystoneworks@gmail.com
+    - name: Phone
+      value: 250 589 6513
+      link: tel:250-589-6513
+
+collections:
+  timber_frames:
+    output: true
+  stonework:
+    output: true
+
+collections_dir: projects
+
+layoutVars:
+    timber_frame_project:
+        images: "/assets/img/content/timber_frames"
+    stonework_project:
+        images: "/assets/img/content/stonework"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "timber_frames" # a collection in your site, in plural form
+    values:
+      layout: "project"
+      images: "/assets/img/content/timber_frames"
+  -
+    scope:
+      path: ""
+      type: "stonework" # a collection in your site, in plural form
+    values:
+      layout: "project"
+      images: "/assets/img/content/stonework"
 
 # Build settings
 markdown: kramdown
