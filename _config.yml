@@ -57,7 +57,7 @@ defaults:
 
 # Build settings
 markdown: kramdown
-remote_theme: eliottvincent/bay_jekyll_theme
+remote_theme: bay_jekyll_theme
 sass:
     style: :compressed
 plugins:
