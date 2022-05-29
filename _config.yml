@@ -57,7 +57,7 @@ defaults:
 
 # Build settings
 markdown: kramdown
-remote_theme: sandystoneworks/sandystoneworks.github.io
+remote_theme: sandystoneworks/bay_jekyll_theme
 sass:
     style: :compressed
 plugins:
