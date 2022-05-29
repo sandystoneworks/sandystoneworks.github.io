@@ -6,6 +6,7 @@ source "https://rubygems.org"
 #     bundle exec jekyll serve
 gem "github-pages", group: :jekyll_plugins
 
+gem "bay_jekyll_theme"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
