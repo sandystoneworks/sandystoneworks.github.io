@@ -12,9 +12,9 @@ header:
   pages:
     - name: Home
       slug: /
-    - name: Stonework
-    - name: Timber Frames
-      slug: /timber_frames
+#    - name: Stonework
+#    - name: Timber Frames
+#      slug: /timber_frames
 
 footer:
   contact:
