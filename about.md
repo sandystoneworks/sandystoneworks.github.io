@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 ---
 
 ## My journey with stone
